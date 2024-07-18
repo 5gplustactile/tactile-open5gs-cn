@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: open5gs
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/naas6g/naas6g-open5gs-cn
+    targetRevision: openverso
+    path: open5gs
+    helm:
+      valueFiles:
+        - ../values/main-values/default-values.yaml
+  destination: 
+    server: https://192.168.100.61:6443
+    namespace: auto-open5gs
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
