@@ -118,3 +118,30 @@ ues:
   affinity: {}
   nodeSelector: {}
   tolerations: []
+
+ues10_20:
+  enabled: true
+  count: 10
+  initialMSISDN: '0000000010'
+  key: 465B5CE8B199B49FAA5F0A2EE238A6BC
+  op: E8ED289DEBA952E4283B54E88E6183CA
+  opType: OPC
+  apnList:
+    - type: 'IPv4'
+      apn: 'internet'
+      slice:
+        sst: 1
+        sd: "0x111111"
+      emergency: false
+  resources:
+    limits: {}
+    requests: {}
+  podSecurityContext:
+    enabled: false
+  containerSecurityContext:
+    enabled: false
+  podLabels: {}
+  podAnnotations: {}
+  affinity: {}
+  nodeSelector: {}
+  tolerations: []
