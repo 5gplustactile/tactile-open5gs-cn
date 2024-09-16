@@ -119,8 +119,8 @@ ues:
   nodeSelector: {}
   tolerations: []
 
-ues10_20:
-  enabled: true
+ues10to20:
+  enabled: false
   count: 10
   initialMSISDN: '0000000010'
   key: 465B5CE8B199B49FAA5F0A2EE238A6BC

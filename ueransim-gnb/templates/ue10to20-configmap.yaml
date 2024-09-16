@@ -1,11 +1,11 @@
-{{- if .Values.ues10_20.enabled -}}
+{{- if .Values.ues10to20.enabled -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ include "common.names.fullname" . }}-ues10_20
+  name: {{ include "common.names.fullname" . }}-ues10to20
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "common.labels.standard" . | nindent 4 }}
-    app.kubernetes.io/component: ues10_20
+    app.kubernetes.io/component: ues10to20
     {{- if .Values.commonLabels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
     {{- end }}
