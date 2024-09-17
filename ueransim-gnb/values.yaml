@@ -41,7 +41,7 @@ clusterDomain: cluster.local
 extraDeploy: []
 
 image:
-  registry: docker.io
+#  registry: docker.io
   repository: dockerhub.mobilesandbox.cloud:9443/tactile5g/ueransim
   tag: 3.2.6
   ## Specify a imagePullPolicy
