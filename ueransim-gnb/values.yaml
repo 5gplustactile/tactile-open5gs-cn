@@ -56,8 +56,7 @@ image:
   ## pullSecrets:
   ##   - myRegistryKeySecretName
   ##
-  pullSecrets:
-  - name: harbor-secret
+  pullSecrets: harbor-secret
   ## Enable debug mode
   ##
   debug: false
