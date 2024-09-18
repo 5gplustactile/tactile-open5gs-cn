@@ -14,5 +14,5 @@ metadata:
   {{- end }}
 data:
   ue.yaml: |
-{{ tpl (.Files.Get "resources/ue.yaml") . | indent 4 }}
+{{ tpl (.Files.Get "resources/ue10to20.yaml") . | indent 4 }}
 {{- end }}
