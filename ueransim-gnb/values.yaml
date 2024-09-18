@@ -95,7 +95,7 @@ tolerations: []
 ues:
   enabled: false
   count: 10
-  initialMSISDN: '0000000001'
+  initialMSISDN: '0000000010'
   key: 465B5CE8B199B49FAA5F0A2EE238A6BC
   op: E8ED289DEBA952E4283B54E88E6183CA
   opType: OPC
@@ -122,7 +122,7 @@ ues:
 ues10to20:
   enabled: false
   count: 10
-  initialMSISDN: '0000000010'
+  initialMSISDN: '0000000030'
   key: 465B5CE8B199B49FAA5F0A2EE238A6BC
   op: E8ED289DEBA952E4283B54E88E6183CA
   opType: OPC
