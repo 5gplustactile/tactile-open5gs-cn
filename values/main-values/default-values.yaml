@@ -56,7 +56,7 @@ upf:
   image:
     tag: 2.7.0
 upf2:
-  enabled: false
+  enabled: true
   image:
     tag: 2.7.0
 webui:
