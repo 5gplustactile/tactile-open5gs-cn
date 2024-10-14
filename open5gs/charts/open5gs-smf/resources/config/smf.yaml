@@ -29,7 +29,7 @@ smf:
     client:
       upf:
       - address: {{ default (printf "%s-upf-pfcp" $open5gsName) .Values.config.upf.pfcp.hostname }}
-      - address: {{ default (printf "%s-upf2-pfcp" $open5gsName) .Values.config.upf.pfcp.hostname2 }}
+
 
 
 
