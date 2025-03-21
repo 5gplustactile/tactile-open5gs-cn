@@ -63,6 +63,11 @@ webui:
   enabled: true
   image:
     tag: 2.7.0
+  services:
+    http:
+      type: LoadBalancer
+      annotations:
+        metallb.universe.tf/loadBalancerIPs: 10.11.29.106
 
 # 4G
 hss:
